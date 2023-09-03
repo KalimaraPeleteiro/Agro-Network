@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SigninActivity">
+
+    <ImageView
+        android:id="@+id/SigninBackground"
+        android:layout_width="411dp"
+        android:layout_height="888dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signin_bg" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="354dp"
+        android:layout_height="414dp"
+        android:layout_marginTop="256dp"
+        android:background="#B32D5F0F"
+        android:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="@+id/SigninBackground"
+        app:layout_constraintStart_toStartOf="@+id/SigninBackground"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/SigninTextCadastro"
+            android:layout_width="161dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="96dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Cadastro"
+            android:textColor="#F0CA03"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/SigninTextMensagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="68dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Venha fazer parte da família!"
+            android:textColor="#F0CA03"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/EmailInputSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="64dp"
+            android:ems="10"
+            android:fontFamily="@font/comfortaa"
+            android:hint="e-mail"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="#BFFF8C"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/SenhaInputSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:layout_marginEnd="64dp"
+            android:ems="10"
+            android:fontFamily="@font/comfortaa"
+            android:hint="senha"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#BFFF8C"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/RegistrationButtonSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="112dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#F0CA03"
+            android:fontFamily="@font/comfortaa"
+            android:text="CADASTRAR"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/AgroLogoSignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="@+id/SigninBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logo_agro_connect" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

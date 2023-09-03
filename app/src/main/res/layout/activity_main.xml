@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/background"
+        android:scaleType="fitXY"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <ImageView
+        android:id="@+id/AppLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Background"
+        app:srcCompat="@drawable/logo_app" />
+
+    <ImageView
+        android:id="@+id/AgroLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_agro_connect" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="236dp"
+        android:backgroundTint="#2D5F0F"
+        android:fontFamily="@font/comfortaa"
+        android:text="LOGIN"
+        android:textColor="#BFFF8C"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/SigninButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="136dp"
+        android:backgroundTint="#2D5F0F"
+        android:fontFamily="@font/comfortaa"
+        android:text="SIGNIN"
+        android:textColor="#BFFF8C"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
